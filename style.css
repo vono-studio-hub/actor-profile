@@ -715,7 +715,7 @@ section {
 }
 
 .gallery-item {
-  background: #d7d0c7;
+  background: #ccafcc
 }
 
 .gallery-big {
@@ -1207,7 +1207,7 @@ footer {
 
   .contact-list {
     grid-template-columns: 1fr;
-
+            
     row-gap: 4px;
   }
 
