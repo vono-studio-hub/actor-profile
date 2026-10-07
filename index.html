@@ -2,614 +2,872 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>유은화 Actor Portfolio</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <link rel="stylesheet" href="style.css">
+  <title>Actor Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/main.js">
 </head>
 
 <body>
 
-  <!-- 모바일 메뉴 배경 -->
-  <div class="menu-overlay"></div>
+  <!-- =========================================
+       HEADER
+  ========================================== -->
 
-  <!-- 모바일 메뉴 -->
-  <aside
-    class="mobile-menu"
-    id="mobileMenu"
-    aria-hidden="true"
-  >
-    <div class="mobile-menu-top">
-      <span>MENU</span>
-
-      <button
-        class="menu-close"
-        type="button"
-        aria-label="메뉴 닫기"
-      >
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="mobile-menu-links">
-      <a href="#home"><span>01</span> HOME</a>
-      <a href="#profile"><span>02</span> PROFILE</a>
-      <a href="#works"><span>03</span> WORKS</a>
-      <a href="#hanbok"><span>04</span> HANBOK</a>
-      <a href="#video"><span>05</span> VIDEO</a>
-      <a href="#contact"><span>06</span> CONTACT</a>
-    </div>
-
-    <div class="mobile-menu-footer">
-      <p>ACTOR · HANBOK</p>
-      <p>INSTAGRAM · CONTACT</p>
-    </div>
-  </aside>
-
-
-  <!-- HEADER -->
   <header class="header">
 
-    <nav class="nav container">
+    <a href="#main" class="logo">
+      ACTOR NAME
+    </a>
 
-      <a href="#home" class="logo">
-        ACTOR
-      </a>
-
-      <div class="desktop-menu">
-        <a href="#home">HOME</a>
-        <a href="#profile">PROFILE</a>
-        <a href="#works">WORKS</a>
-        <a href="#hanbok">HANBOK</a>
-        <a href="#video">VIDEO</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="메뉴 열기"
-        aria-expanded="false"
-        aria-controls="mobileMenu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
+    <nav class="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#identity">IDENTITY</a>
+      <a href="#work">WORK</a>
+      <a href="#filmography">FILMOGRAPHY</a>
+      <a href="#archive">ARCHIVE</a>
+      <a href="#showreel">SHOWREEL</a>
+      <a href="#contact">CONTACT</a>
     </nav>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="메뉴 열기"
+    >
+      <span></span>
+      <span></span>
+    </button>
 
   </header>
 
 
+  <!-- =========================================
+       MOBILE MENU
+  ========================================== -->
+
+  <div class="mobile-menu">
+
+    <button
+      class="menu-close"
+      type="button"
+    >
+      CLOSE ×
+    </button>
+
+    <nav>
+      <a href="#main">INDEX</a>
+      <a href="#about">ABOUT</a>
+      <a href="#identity">IDENTITY</a>
+      <a href="#work">WORK</a>
+      <a href="#filmography">FILMOGRAPHY</a>
+      <a href="#archive">ARCHIVE</a>
+      <a href="#showreel">SHOWREEL</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+  </div>
+
+
   <main>
 
-    <!-- HERO -->
-    <section
-      class="hero container"
-      id="home"
-    >
 
-      <div class="hero-text">
+    <!-- =========================================
+         01 HERO
+    ========================================== -->
 
-        <h5>
-          ACTOR · MODEL PORTFOLIO
-        </h5>
+    <section class="hero" id="main">
+
+      <div class="hero-meta">
+        <span>2026 / ACTOR PORTFOLIO</span>
+      </div>
+
+
+      <div class="hero-title">
 
         <h1>
-          HANBOK<br>
-          EDITORIAL
+          ACTOR<br>
+          NAME
         </h1>
 
         <p>
-          중년의 새로운 도전과 가능성을 담아
-          배우 활동과 한복 모델 활동을 이어가고 있습니다.
-          드라마 · 유튜브 · 광고 · 한복 화보를 통해
-          다양한 모습을 보여드립니다.
+          ACTOR<br>
+          SEOUL, KOREA
         </p>
-
-        <a
-          class="button"
-          href="#profile"
-        >
-          Explore Profile
-        </a>
 
       </div>
 
-      <!-- 나중에 사진으로 교체 -->
-      <div
-        class="hero-image placeholder"
-        data-label=""
-      ><img src="./img/09.jpg"></div>
+
+      <div class="hero-image reveal">
+
+        <div
+          class="placeholder ph-main"
+          data-label="MAIN / PORTRAIT"
+        ></div>
+
+      </div>
+
+
+      <div class="hero-copy">
+
+        <p>
+          A FACE.<br>
+          A VOICE.<br>
+          A STORY.
+        </p>
+
+      </div>
+
+
+      <div class="hero-bottom">
+
+        <span>
+          SCROLL TO EXPLORE ↓
+        </span>
+
+        <span>
+          01 / 08
+        </span>
+
+      </div>
 
     </section>
 
 
-    <!-- PROFILE -->
-    <section id="profile">
 
-      <div class="about container">
+    <!-- =========================================
+         02 ABOUT
+    ========================================== -->
 
-        <!-- 프로필 사진 -->
-        <div
-          class="profile-photo placeholder"
-          data-label=""
-        ><img src="./img/2.png"></div>
+    <section
+      class="about section"
+      id="about"
+    >
+
+      <div class="section-number">
+        02 / ABOUT
+      </div>
 
 
-        <div class="about-content">
+      <div class="about-grid">
 
-          <p class="profile-kicker">
-            ACTOR PROFILE
+
+        <!-- IMAGE -->
+
+        <div class="about-image reveal">
+
+          <div
+            class="placeholder ph-about light"
+            data-label="ABOUT / PORTRAIT"
+          ></div>
+
+        </div>
+
+
+        <!-- TEXT -->
+
+        <div class="about-intro">
+
+          <p class="eyebrow">
+            ABOUT THE ACTOR
           </p>
 
-          <h2>유은화</h2>
+          <h2>
+            다양한 얼굴로<br>
+            이야기에 스며드는<br>
+            배우.
+          </h2>
 
-          <p class="profile-description">
-            밝고 적극적인 성격으로 새로운 활동에
-            거리낌 없이 도전합니다.
-            활발하고 활동적이며 리액션과 감정 몰입에
-            강점이 있고, 맡은 일에는 언제나
-            성실하고 열정적인 자세로 임합니다.
+          <p class="about-description">
+            자연스러운 표현과 깊이 있는 감정을
+            바탕으로 다양한 인물을 만들어가는
+            배우입니다.
           </p>
 
-
-          <div class="info">
-
-            <strong>BIRTH</strong>
-            <span>1977.12.16 · 만 48세</span>
-
-            <strong>HEIGHT</strong>
-            <span>165cm</span>
-
-            <strong>WEIGHT</strong>
-            <span>55kg</span>
-
-            <strong>SHOES</strong>
-            <span>235mm</span>
-
-            <strong>AREA</strong>
-            <span>경기 용인</span>
-
-            <strong>VEHICLE</strong>
-            <span>보유</span>
-
-            <strong>AVAILABLE</strong>
-            <span>월 · 화 · 수 · 목</span>
-
-            <strong>JOB</strong>
-            <span>헤어샵 운영</span>
-
-          </div>
+        </div>
 
 
-          <!-- 특기 / 의상 / 연락처 -->
+        <!-- PROFILE -->
 
-          <div class="profile-detail-grid">
+        <div class="profile">
 
-            <div class="profile-detail">
+          <dl>
 
-              <span class="detail-label">
-                SPECIALTY
-              </span>
-
-              <p>
-                트로트 노래 · 골프 · 러닝 ·
-                독백 연습 중
-              </p>
-
+            <div>
+              <dt>NAME</dt>
+              <dd>배우 이름</dd>
             </div>
 
-
-            <div class="profile-detail">
-
-              <span class="detail-label">
-                WARDROBE
-              </span>
-
-              <p>
-                정장 2세트 · 세미정장 2세트 ·
-                캐주얼 의상 다수 · 골프웨어 다수
-              </p>
-
+            <div>
+              <dt>BIRTH</dt>
+              <dd>2000. 00. 00</dd>
             </div>
 
-
-            <div
-              class="profile-detail profile-detail-wide"
-            >
-
-              <span class="detail-label">
-                CONTACT
-              </span>
-
-              <p>
-                010-9191-1996
-              </p>
-
+            <div>
+              <dt>HEIGHT</dt>
+              <dd>000 CM</dd>
             </div>
 
-          </div>
+            <div>
+              <dt>AGENCY</dt>
+              <dd>AGENCY NAME</dd>
+            </div>
+
+            <div>
+              <dt>SPECIAL</dt>
+              <dd>ACTING / DANCE</dd>
+            </div>
+
+          </dl>
 
         </div>
 
       </div>
 
+    </section>
 
-      <!-- ABOUT -->
 
-      <div class="container story-wrap">
 
-        <div class="story-title">
+    <!-- =========================================
+         03 IDENTITY
+    ========================================== -->
+
+    <section
+      class="identity section dark"
+      id="identity"
+    >
+
+      <div class="section-number">
+        03 / IDENTITY
+      </div>
+
+
+      <div class="identity-content">
+
+
+        <div class="identity-image">
+
+          <div
+            id="identityVisual"
+            class="placeholder ph-identity-calm"
+            data-label="ACTOR / IDENTITY"
+          ></div>
+
+        </div>
+
+
+        <button
+          class="identity-word word-calm active"
+          type="button"
+          data-theme="calm"
+        >
+          CALM
+        </button>
+
+
+        <button
+          class="identity-word word-natural"
+          type="button"
+          data-theme="natural"
+        >
+          NATURAL
+        </button>
+
+
+        <button
+          class="identity-word word-deep"
+          type="button"
+          data-theme="deep"
+        >
+          DEEP
+        </button>
+
+
+        <div class="identity-caption">
+
+          <span>ACTOR IDENTITY</span>
+
+          <p>
+            ONE FACE,<br>
+            MANY STORIES.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         04 SELECTED WORK
+    ========================================== -->
+
+    <section
+      class="work section"
+      id="work"
+    >
+
+      <div class="work-header">
+
+        <div>
+
+          <div class="section-number">
+            04 / SELECTED WORK
+          </div>
+
+          <p class="eyebrow">
+            SELECTED PROJECTS
+          </p>
+
+        </div>
+
+
+        <h2>
+          Selected<br>
+          Works
+        </h2>
+
+      </div>
+
+
+
+      <!-- WORK 01 -->
+
+      <article class="work-item">
+
+        <div class="work-number">
+          01
+        </div>
+
+
+        <div class="work-image reveal">
+
+          <div
+            class="placeholder ph-work-01"
+            data-label="WORK 01 / STILL CUT"
+          ></div>
+
+        </div>
+
+
+        <div class="work-info">
 
           <span>
-            ABOUT
+            2026 / DRAMA
           </span>
 
           <h3>
-            새로운 도전을
-            시작합니다.
+            작품 제목
           </h3>
 
-        </div>
-
-
-        <div class="story-copy">
-
           <p>
-            어릴 때부터 끼가 많아 춤추고 노래하는 것을
-            좋아했지만, 학업과 일을 이어오며 오랫동안
-            꿈을 마음속에 간직해 왔습니다.
-            이제 중년이라는 새로운 시점에서 제 안의
-            재능과 가능성을 다시 펼쳐보기 위해
-            배우와 모델 활동에 도전하고 있습니다.
+            CHARACTER<br>
+            배역 이름
           </p>
 
-          <p>
-            제 인생의 후반부에는 제가 좋아하고 잘할 수 있는
-            일을 통해 다양한 모습을 보여드리고 싶습니다.
-            현재 드라마 보조출연, 유튜브 단역 출연,
-            건강보조식품 광고 모델 활동을 경험했으며
-            한복 모델로 패션쇼를 준비하고 있습니다.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- WORKS -->
-    <section id="works">
-
-      <div class="container">
-
-        <div class="section-title">
-
-          <h2>Works</h2>
-
-          <a
-            href="#"
-            class="view-all"
-          >
-            VIEW ALL →
+          <a href="#">
+            VIEW PROJECT ↗
           </a>
 
         </div>
 
-
-        <div class="works">
-
-          <article class="work">
-
-            <div
-              class="work-image placeholder"
-              data-label="DRAMA"
-            ></div>
-
-            <h4>Drama</h4>
-
-            <p>
-              드라마 보조출연
-            </p>
-
-          </article>
+      </article>
 
 
-          <article class="work">
 
-            <div
-              class="work-image placeholder"
-              data-label="YOUTUBE"
-            ></div>
+      <!-- WORK 02 -->
 
-            <h4>YouTube</h4>
+      <article class="work-item reverse">
 
-            <p>
-              유튜브 콘텐츠 단역 출연
-            </p>
-
-          </article>
+        <div class="work-number">
+          02
+        </div>
 
 
-          <article class="work">
+        <div class="work-image reveal">
 
-            <div
-              class="work-image placeholder"
-              data-label="COMMERCIAL"
-            ></div>
-
-            <h4>Commercial</h4>
-
-            <p>
-              건강보조식품 광고 모델 출연
-            </p>
-
-          </article>
-
-
-          <article class="work">
-
-            <div
-              class="work-image placeholder"
-              data-label=""
-            ><img src="./img/6.jpg"></div>
-
-            <h4>Hanbok Model</h4>
-
-            <p>
-              한복 모델 · 패션쇼 준비 중
-            </p>
-
-          </article>
+          <div
+            class="placeholder ph-work-02"
+            data-label="WORK 02 / STILL CUT"
+          ></div>
 
         </div>
 
-      </div>
+
+        <div class="work-info">
+
+          <span>
+            2025 / FILM
+          </span>
+
+          <h3>
+            작품 제목
+          </h3>
+
+          <p>
+            CHARACTER<br>
+            배역 이름
+          </p>
+
+          <a href="#">
+            VIEW PROJECT ↗
+          </a>
+
+        </div>
+
+      </article>
 
     </section>
 
 
-    <!-- HANBOK -->
-    <section id="hanbok">
 
-      <div class="container">
+    <!-- =========================================
+         05 FILMOGRAPHY
+    ========================================== -->
 
-        <div class="section-title">
+    <section
+      class="filmography section dark"
+      id="filmography"
+    >
+
+      <div class="section-number">
+        05 / FILMOGRAPHY
+      </div>
+
+
+      <div class="filmography-layout">
+
+
+        <!-- TITLE -->
+
+        <div class="filmography-title">
 
           <h2>
-            Hanbok Editorial
+            Filmography
           </h2>
 
-          <a
-            href="#"
-            class="view-all"
-          >
-            VIEW ALL →
-          </a>
+          <p>
+            배우의 시간과<br>
+            작품의 기록.
+          </p>
 
         </div>
 
 
-        
-      <div class="gallery">
+        <!-- LIST -->
+
+        <div class="filmography-list">
 
 
-      <div
-      class="gallery-item gallery-big placeholder"
-      data-label=""
-      >
-      <img src="./img/1.jpg" class="hanbok-02">
-      </div>
+          <div
+            class="film-row active"
+            data-theme="one"
+          >
+
+            <span class="year">
+              2026
+            </span>
+
+            <span class="film-title">
+              작품 제목 01
+            </span>
+
+            <span class="type">
+              DRAMA
+            </span>
+
+            <span class="role">
+              배역 이름
+            </span>
+
+          </div>
 
 
-      <div
-      class="gallery-item gallery-medium placeholder"
-      data-label=""
-      >
-      <img src="./img/2.jpg" class="hanbok-01">
-      </div>
+          <div
+            class="film-row"
+            data-theme="two"
+          >
+
+            <span class="year">
+              2025
+            </span>
+
+            <span class="film-title">
+              작품 제목 02
+            </span>
+
+            <span class="type">
+              FILM
+            </span>
+
+            <span class="role">
+              배역 이름
+            </span>
+
+          </div>
 
 
-      <div
-      class="gallery-item gallery-small placeholder"
-      data-label=""
-      >
-      <img src="./img/4.jpg" class="hanbok-04">
-      </div>
+          <div
+            class="film-row"
+            data-theme="three"
+          >
+
+            <span class="year">
+              2024
+            </span>
+
+            <span class="film-title">
+              작품 제목 03
+            </span>
+
+            <span class="type">
+              DRAMA
+            </span>
+
+            <span class="role">
+              배역 이름
+            </span>
+
+          </div>
 
 
-      <div
-      class="gallery-item gallery-medium placeholder"
-      data-label=""
-      >
-      <img src="./img/10.jpg" class="hanbok-05">
-      </div>
+          <div
+            class="film-row"
+            data-theme="four"
+          >
+
+            <span class="year">
+              2023
+            </span>
+
+            <span class="film-title">
+              작품 제목 04
+            </span>
+
+            <span class="type">
+              SHORT FILM
+            </span>
+
+            <span class="role">
+              배역 이름
+            </span>
+
+          </div>
+
+        </div>
 
 
-      <div
-      class="gallery-item gallery-big placeholder"
-      data-label=""
-      >
-      <img src="./img/3.jpg" class="hanbok-03">
-      </div>
+        <!-- HOVER PREVIEW -->
 
+        <div class="film-preview">
 
-      <div
-      class="gallery-item gallery-small placeholder"
-      data-label=""
-      >
-      <img src="./img/7.jpg" class="hanbok-06">
-      </div>
+          <div
+            id="filmPreview"
+            class="placeholder ph-film-one"
+            data-label="2026 / DRAMA"
+          ></div>
 
-
-      <div
-      class="gallery-item gallery-medium placeholder"
-      data-label=""
-      >
-      <img src="./img/9.jpg" class="hanbok-07">
-      </div>
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- VIDEO -->
-    <section id="video">
 
-      <div class="container">
+    <!-- =========================================
+         06 ARCHIVE
+    ========================================== -->
 
-        <div class="section-title">
+    <section
+      class="archive section"
+      id="archive"
+    >
 
-          <h2>Video</h2>
+      <div class="archive-header">
 
-          <a
-            href="#"
-            class="view-all"
-          >
-            VIEW ALL →
-          </a>
+
+        <div>
+
+          <div class="section-number">
+            06 / VISUAL ARCHIVE
+          </div>
+
+          <p class="eyebrow">
+            MOMENTS & PORTRAITS
+          </p>
 
         </div>
 
 
-        <div class="video-grid">
-
-          <article class="video-card">
-
-            <div
-              class="video-thumbnail placeholder"
-              data-label="SHOWREEL"
-            >
-
-              <span class="play-button">
-                ▶
-              </span>
-
-            </div>
-
-            <h4>
-              Actor Showreel
-            </h4>
-
-            <p>
-              연기 장면 모음
-            </p>
-
-          </article>
+        <h2>
+          Visual<br>
+          Archive
+        </h2>
 
 
-          <article class="video-card">
+        <p class="archive-description">
+          작품과 화보,<br>
+          배우의 다양한 순간들.
+        </p>
 
-            <div
-              class="video-thumbnail placeholder"
-              data-label="HANBOK FILM"
-            >
-
-              <span class="play-button">
-                ▶
-              </span>
-
-            </div>
-
-            <h4>
-              Hanbok Film
-            </h4>
-
-            <p>
-              한복 화보 메이킹
-            </p>
-
-          </article>
+      </div>
 
 
-          <article class="video-card">
 
-            <div
-              class="video-thumbnail placeholder"
-              data-label="INTERVIEW"
-            >
+      <div class="archive-grid">
 
-              <span class="play-button">
-                ▶
-              </span>
 
-            </div>
+        <figure
+          class="archive-item archive-large reveal"
+        >
 
-            <h4>
-              Interview
-            </h4>
+          <div
+            class="placeholder ph-archive-01"
+            data-label="01 / PROFILE"
+          ></div>
 
-            <p>
-              배우 인터뷰 영상
-            </p>
+        </figure>
 
-          </article>
+
+        <figure
+          class="archive-item archive-small reveal"
+        >
+
+          <div
+            class="placeholder ph-archive-02"
+            data-label="02 / STILL"
+          ></div>
+
+        </figure>
+
+
+        <figure
+          class="archive-item archive-medium reveal"
+        >
+
+          <div
+            class="placeholder ph-archive-03 light"
+            data-label="03 / PORTRAIT"
+          ></div>
+
+        </figure>
+
+
+        <figure
+          class="archive-item archive-tall reveal"
+        >
+
+          <div
+            class="placeholder ph-archive-04"
+            data-label="04 / BEHIND"
+          ></div>
+
+        </figure>
+
+
+        <div class="archive-message">
+
+          <span>
+            ARCHIVE / 2026
+          </span>
+
+          <p>
+            Every frame<br>
+            tells a different<br>
+            story.
+          </p>
 
         </div>
 
       </div>
 
     </section>
+
+
+
+    <!-- =========================================
+         07 SHOWREEL
+    ========================================== -->
+
+    <section
+      class="showreel section dark"
+      id="showreel"
+    >
+
+      <div class="section-number">
+        07 / SHOWREEL
+      </div>
+
+
+      <div class="showreel-heading">
+
+        <h2>
+          Showreel
+        </h2>
+
+        <p>
+          장면 속에서 만나는<br>
+          배우의 또 다른 얼굴.
+        </p>
+
+      </div>
+
+
+      <div class="showreel-player">
+
+        <div
+          class="placeholder ph-showreel"
+          data-label="SHOWREEL / VIDEO"
+        ></div>
+
+
+        <button
+          class="play-button"
+          id="playButton"
+          type="button"
+        >
+          <span>PLAY</span>
+        </button>
+
+
+        <div class="showreel-bottom">
+
+          <span>
+            ACTOR SHOWREEL
+          </span>
+
+          <span>
+            02:35
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         08 CONTACT
+    ========================================== -->
+
+    <section
+      class="contact section"
+      id="contact"
+    >
+
+      <div class="section-number">
+        08 / CONTACT
+      </div>
+
+
+      <div class="contact-layout">
+
+
+        <div class="contact-title">
+
+          <p>
+            FOR NEW STORIES
+          </p>
+
+          <h2>
+            Let's Create<br>
+            Something<br>
+            Memorable.
+          </h2>
+
+        </div>
+
+
+        <div class="contact-info">
+
+
+          <div>
+
+            <span>
+              AGENCY
+            </span>
+
+            <p>
+              AGENCY NAME
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              EMAIL
+            </span>
+
+            <p>
+              contact@example.com
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              SOCIAL
+            </span>
+
+            <p>
+              INSTAGRAM ↗<br>
+              YOUTUBE ↗
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <footer>
+
+        <span>
+          © 2026 ACTOR NAME
+        </span>
+
+        <span>
+          ACTOR PORTFOLIO
+        </span>
+
+        <a href="#main">
+          BACK TO TOP ↑
+        </a>
+
+      </footer>
+
+    </section>
+
 
   </main>
 
 
-  <!-- CONTACT -->
-  <footer id="contact">
-
-    <div class="contact container">
-
-      <div
-        class="footer-image placeholder"
-        data-label="CONTACT IMAGE"
-      ></div>
-
-
-      <div class="contact-content">
-
-        <h2>
-          Let’s Work<br>
-          Together
-        </h2>
-
-        <p>
-          작품 출연, 광고, 화보 및
-          한복 관련 프로젝트 문의는
-          아래 연락처를 통해 전달해 주세요.
-        </p>
-
-
-        <div class="contact-list">
-
-          <strong>NAME</strong>
-          <span>유은화</span>
-
-          <strong>AREA</strong>
-          <span>경기 용인</span>
-
-          <strong>AVAILABLE</strong>
-          <span>월 · 화 · 수 · 목</span>
-
-          <strong>CONTACT</strong>
-          <span>010-9191-1996</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-  <!-- JS 연결 -->
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
